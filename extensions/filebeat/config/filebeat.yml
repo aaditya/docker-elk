@@ -26,3 +26,6 @@ setup.kibana:
 
 output.logstash:
   hosts: ["localhost:5044"]
+
+http.enabled: true
+http.host: 0.0.0.0
