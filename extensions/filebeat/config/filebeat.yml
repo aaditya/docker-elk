@@ -1,0 +1,28 @@
+filebeat.config:
+  modules:
+    path: ${path.config}/modules.d/*.yml
+    reload.enabled: false
+
+filebeat.autodiscover:
+  providers:
+    - type: docker
+      hints.enabled: true
+
+processors:
+- add_cloud_metadata: ~
+
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - “/var/log/apache2/*”
+    - “/var/log/nginx/*”
+    - “/var/log/mysql/*”
+    - "/var/log/redis/*"
+    - "/var/log/mongodb/*"
+
+setup.kibana:
+  host: "kibana:5601"
+
+output.logstash:
+  hosts: ["localhost:5044"]

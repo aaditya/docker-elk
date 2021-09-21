@@ -1,0 +1,20 @@
+{
+  "name": "docker-elk",
+  "version": "7.14.1",
+  "description": "ELK Docker with commands through node.",
+  "main": "index.js",
+  "scripts": {
+    "docker:up": "docker-compose -f docker-compose.yml -f extensions/metricbeat/metricbeat-compose.yml -f extensions/filebeat/filebeat-compose.yml up -d",
+    "docker:down": "docker-compose -f docker-compose.yml -f extensions/metricbeat/metricbeat-compose.yml -f extensions/filebeat/filebeat-compose.yml down"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaditya/docker-elk.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aaditya/docker-elk/issues"
+  },
+  "homepage": "https://github.com/aaditya/docker-elk#readme"
+}
