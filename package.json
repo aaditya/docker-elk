@@ -4,9 +4,9 @@
   "description": "ELK Docker with commands through node.",
   "main": "index.js",
   "scripts": {
-    "elk:start": "docker-compose -f docker-compose.yml -f extensions/metricbeat/metricbeat-compose.yml -f extensions/filebeat/filebeat-compose.yml up -d",
-    "elk:restart": "docker-compose -f docker-compose.yml -f extensions/metricbeat/metricbeat-compose.yml -f extensions/filebeat/filebeat-compose.yml restart",
-    "elk:stop": "docker-compose -f docker-compose.yml -f extensions/metricbeat/metricbeat-compose.yml -f extensions/filebeat/filebeat-compose.yml down"
+    "elk:start": "docker-compose up -d",
+    "elk:restart": "docker-compose restart",
+    "elk:stop": "docker-compose down"
   },
   "repository": {
     "type": "git",
