@@ -8,14 +8,6 @@
     "elk:restart": "docker-compose restart",
     "elk:stop": "docker-compose down"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aaditya/docker-elk.git"
-  },
   "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/aaditya/docker-elk/issues"
-  },
-  "homepage": "https://github.com/aaditya/docker-elk#readme"
+  "license": "MIT"
 }

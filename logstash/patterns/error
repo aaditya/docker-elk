@@ -1,0 +1,2 @@
+# contents of ./patterns/error:
+LOG_LABEL ^[a-z]+\:\s
